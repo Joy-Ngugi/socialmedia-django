@@ -191,6 +191,7 @@ def profile_update(request):
 
     return render(request, 'profile_update.html', {'profile_form': profile_form})
 
+
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     
